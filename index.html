@@ -14,668 +14,674 @@
 </head>
 
 <body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar" id="navbar">
+            <a href="#" class="nav-logo">🏛️ Грозный</a>
 
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <a href="#" class="nav-logo">🏛️ Грозный</a>
+            <ul class="nav-menu">
+                <li><a href="#about">Город</a></li>
+                <li><a href="#landmarks">Места</a></li>
+                <li><a href="#history">История</a></li>
+                <li><a href="#culture">Культура</a></li>
+                <li><a href="#economy">Экономика</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Связь</a></li>
+            </ul>
 
-        <ul class="nav-menu">
-            <li><a href="#about">Город</a></li>
-            <li><a href="#landmarks">Места</a></li>
-            <li><a href="#history">История</a></li>
-            <li><a href="#culture">Культура</a></li>
-            <li><a href="#economy">Экономика</a></li>
-            <li><a href="#gallery">Галерея</a></li>
-            <li><a href="#contact">Связь</a></li>
-        </ul>
+            <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
 
-        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </nav>
+        <!-- Mobile Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#about" onclick="closeMenu()">О городе</a>
+            <a href="#landmarks" onclick="closeMenu()">Достопримечательности</a>
+            <a href="#history" onclick="closeMenu()">История</a>
+            <a href="#culture" onclick="closeMenu()">Madaniyat</a>
+            <a href="#economy" onclick="closeMenu()">Экономика</a>
+            <a href="#transport" onclick="closeMenu()">Транспорт</a>
+            <a href="#gallery" onclick="closeMenu()">Галерея</a>
+            <a href="#news" onclick="closeMenu()">Новости</a>
+            <a href="#contact" onclick="closeMenu()">Cвязь</a>
+        </div>
+        <div class="overlay" id="overlay" onclick="closeMenu()"></div>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-nav" id="mobileNav">
-        <a href="#about" onclick="closeMenu()">О городе</a>
-        <a href="#landmarks" onclick="closeMenu()">Достопримечательности</a>
-        <a href="#history" onclick="closeMenu()">История</a>
-        <a href="#culture" onclick="closeMenu()">Madaniyat</a>
-        <a href="#economy" onclick="closeMenu()">Экономика</a>
-        <a href="#transport" onclick="closeMenu()">Транспорт</a>
-        <a href="#gallery" onclick="closeMenu()">Галерея</a>
-        <a href="#news" onclick="closeMenu()">Новости</a>
-        <a href="#contact" onclick="closeMenu()">Cвязь</a>
-    </div>
-    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Грозный</h1>
-            <p>Столица Чеченской Республики - сочетание истории, культуры и современности</p>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">328,000</span>
-                    <span class="stat-label">Численность населения</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">1818</span>
-                    <span class="stat-label">Основан</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">305</span>
-                    <span class="stat-label">км ² Площадь</span>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Грозный</h1>
+                <p>Столица Чеченской Республики - сочетание истории, культуры и современности</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">328,000</span>
+                        <span class="stat-label">Численность населения</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1818</span>
+                        <span class="stat-label">Основан</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">305</span>
+                        <span class="stat-label">км ² Площадь</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-down">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
+            <div class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="section-header">
-            <h2 class="section-title">О городе</h2>
-            <p class="section-subtitle">Сердце Кавказа - это сочетание традиций и современности.</p>
-        </div>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2 class="section-title">О городе</h2>
+                <p class="section-subtitle">Сердце Кавказа - это сочетание традиций и современности.</p>
+            </div>
 
-        <div class="about-grid">
-            <div class="about-text">
-                <h3>Город сердца</h3>
-                <p>
-                    <span class="highlight">Грозный</span> (чеченский: Сойлжа-Гивала) - Республика Чечня
-                    столицы и крупнейшего города. Этот город расположен на берегу реки Сунджа
-                    Республики Узбекистан.
-                </p>
-                <p>
-                    В 1818 году по приказу генерала Ермолова был основан замок Сунья. Город богат
-                    «Баку Кавказа» и стал важным промышленным центром в XX веке.
-                </p>
-                <p>
-                    После войн 1990 - х годов Грозный был полностью восстановлен и стал называться «Дубай Кавказа»
-                    стал современным мегаполисом.
-                </p>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Город сердца</h3>
+                    <p>
+                        <span class="highlight">Грозный</span> (чеченский: Сойлжа-Гивала) - Республика Чечня
+                        столицы и крупнейшего города. Этот город расположен на берегу реки Сунджа
+                        Республики Узбекистан.
+                    </p>
+                    <p>
+                        В 1818 году по приказу генерала Ермолова был основан замок Сунья. Город богат
+                        «Баку Кавказа» и стал важным промышленным центром в XX веке.
+                    </p>
+                    <p>
+                        После войн 1990 - х годов Грозный был полностью восстановлен и стал называться «Дубай Кавказа»
+                        стал современным мегаполисом.
+                    </p>
 
-                <div class="about-features">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-mosque"></i>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-mosque"></i>
+                            </div>
+                            <div>
+                                <strong>50+</strong>
+                                <p style="color: var(--gray); font-size: 0.9rem;">Мечеть и святыня.</p>
+                            </div>
                         </div>
-                        <div>
-                            <strong>50+</strong>
-                            <p style="color: var(--gray); font-size: 0.9rem;">Мечеть и святыня.</p>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div>
+                                <strong>15+</strong>
+                                <p style="color: var(--gray); font-size: 0.9rem;">Музей и галерея</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-university"></i>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <div>
+                                <strong>25</strong>
+                                <p style="color: var(--gray); font-size: 0.9rem;">Парк и сад »</p>
+                            </div>
                         </div>
-                        <div>
-                            <strong>15+</strong>
-                            <p style="color: var(--gray); font-size: 0.9rem;">Музей и галерея</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-tree"></i>
-                        </div>
-                        <div>
-                            <strong>25</strong>
-                            <p style="color: var(--gray); font-size: 0.9rem;">Парк и сад »</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div>
-                            <strong>10+</strong>
-                            <p style="color: var(--gray); font-size: 0.9rem;">Университет</p>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <strong>10+</strong>
+                                <p style="color: var(--gray); font-size: 0.9rem;">Университет</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800" alt="Grozny Siti">
-                <div class="image-badge">★ 4.9 рейтинг</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Landmarks Section -->
-    <section id="landmarks" class="landmarks">
-        <div class="section-header">
-            <h2 class="section-title">Достопримечательности</h2>
-            <p class="section-subtitle">Самые известные и красивые памятники города</p>
-        </div>
-
-        <div class="landmarks-grid">
-            <div class="landmark-card">
-                <div class="landmark-image"
-                    style="background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600')">
-                    <div class="landmark-overlay"></div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800" alt="Grozny Siti">
+                    <div class="image-badge">★ 4.9 рейтинг</div>
                 </div>
-                <div class="landmark-content">
-                    <span class="landmark-tag">Религиозная обида</span>
-                    <h3>Мечеть Ахмада Кадырова</h3>
-                    <p>Известен как «Сердце Чечни». Одна из крупнейших мечетей Европы, 10 000
-                        может вместить больше тысячи человек.</p>
-                    <div class="landmark-meta">
-                        <span class="meta-item"><i class="fas fa-map-marker-alt"></i>Проспект Путина</span>
-                        <span class="meta-item"><i class="fas fa-clock"></i> 24/7</span>
+            </div>
+        </section>
+
+        <!-- Landmarks Section -->
+        <section id="landmarks" class="landmarks">
+            <div class="section-header">
+                <h2 class="section-title">Достопримечательности</h2>
+                <p class="section-subtitle">Самые известные и красивые памятники города</p>
+            </div>
+
+            <div class="landmarks-grid">
+                <div class="landmark-card">
+                    <div class="landmark-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600')">
+                        <div class="landmark-overlay"></div>
+                    </div>
+                    <div class="landmark-content">
+                        <span class="landmark-tag">Религиозная обида</span>
+                        <h3>Мечеть Ахмада Кадырова</h3>
+                        <p>Известен как «Сердце Чечни». Одна из крупнейших мечетей Европы, 10 000
+                            может вместить больше тысячи человек.</p>
+                        <div class="landmark-meta">
+                            <span class="meta-item"><i class="fas fa-map-marker-alt"></i>Проспект Путина</span>
+                            <span class="meta-item"><i class="fas fa-clock"></i> 24/7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="landmark-card">
+                    <div class="landmark-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600')">
+                        <div class="landmark-overlay"></div>
+                    </div>
+                    <div class="landmark-content">
+                        <span class="landmark-tag">Архитектура</span>
+                        <h3>Грозный-Сити</h3>
+                        <p>Современный бизнес-центр, 5 небоскребов. Самое высокое здание имеет высоту 145 метров.
+                            Самые высокие здания на Кавказе.</p>
+                        <div class="landmark-meta">
+                            <span class="meta-item"><i class="fas fa-map-marker-alt"></i>Проспект Кадырова</span>
+                            <span class="meta-item"><i class="fas fa-building"></i> 5 башен</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="landmark-card">
+                    <div class="landmark-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=600')">
+                        <div class="landmark-overlay"></div>
+                    </div>
+                    <div class="landmark-content">
+                        <span class="landmark-tag">Культура</span>
+                        <h3>Национальный музей</h3>
+                        <p>Крупнейший музей, отражающий богатую историю и культуру Чечни. От древних пленников
+                            до современного искусства.</p>
+                        <div class="landmark-meta">
+                            <span class="meta-item"><i class="fas fa-map-marker-alt"></i>проспект Ленина</span>
+                            <span class="meta-item"><i class="fas fa-ticket-alt"></i> 200₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="landmark-card">
+                    <div class="landmark-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600')">
+                        <div class="landmark-overlay"></div>
+                    </div>
+                    <div class="landmark-content">
+                        <span class="landmark-tag">Исторический памятник</span>
+                        <h3>Аргунские ворота</h3>
+                        <p>Символические ворота города, образец традиционной чеченской архитектуры. Вечер красивый
+                            имеет освещение.</p>
+                        <div class="landmark-meta">
+                            <span class="meta-item"><i class="fas fa-map-marker-alt"></i>Центр города</span>
+                            <span class="meta-item"><i class="fas fa-camera"></i> бесплатно</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="landmark-card">
+                    <div class="landmark-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=600')">
+                        <div class="landmark-overlay"></div>
+                    </div>
+                    <div class="landmark-content">
+                        <span class="landmark-tag">Природа</span>
+                        <h3>Пляж Сунья</h3>
+                        <p>Зона отдыха, пешеходные дорожки и парки вдоль реки. Любимый отдых местных жителей
+                            место получения.</p>
+                        <div class="landmark-meta">
+                            <span class="meta-item"><i class="fas fa-map-marker-alt"></i>Река Сунья</span>
+                            <span class="meta-item"><i class="fas fa-walking"></i>5 км</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="landmark-card">
+                    <div class="landmark-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=600')">
+                        <div class="landmark-overlay"></div>
+                    </div>
+                    <div class="landmark-content">
+                        <span class="landmark-tag">искусство</span>
+                        <h3>Национальный театр</h3>
+                        <p>Чеченский национальный театр - сцена драмы и музыкальных спектаклей. Традиционный танец и
+                            музыка
+                            демонстрации.</p>
+                        <div class="landmark-meta">
+                            <span class="meta-item"><i class="fas fa-map-marker-alt"></i>Театральная площадь</span>
+                            <span class="meta-item"><i class="fas fa-theater-masks"></i> 800 Сиденье</span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="landmark-card">
-                <div class="landmark-image"
-                    style="background-image: url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600')">
-                    <div class="landmark-overlay"></div>
+        <!-- History Timeline -->
+        <section id="history" class="history">
+            <div class="section-header">
+                <h2 class="section-title">История города</h2>
+                <p class="section-subtitle">Важнейшие этапы развития Грозного</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1818</div>
+                        <h3>Основание</h3>
+                        <p>По приказу генерала Ермолова он был основан как крепость Сунья. Во время Кавказских войн
+                            важная военная крепость.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
                 </div>
-                <div class="landmark-content">
-                    <span class="landmark-tag">Архитектура</span>
-                    <h3>Грозный-Сити</h3>
-                    <p>Современный бизнес-центр, 5 небоскребов. Самое высокое здание имеет высоту 145 метров.
-                        Самые высокие здания на Кавказе.</p>
-                    <div class="landmark-meta">
-                        <span class="meta-item"><i class="fas fa-map-marker-alt"></i>Проспект Кадырова</span>
-                        <span class="meta-item"><i class="fas fa-building"></i> 5 башен</span>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1870</div>
+                        <h3>Железная дорога и нефть</h3>
+                        <p>Строительство железной дороги Ростов - Баку способствовало быстрому развитию города. Нефть
+                            начало промышленности.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1917</div>
+                        <h3>Советский период</h3>
+                        <p>Грозный стал центром нефтяной промышленности. Город был расширен и модернизирован. В 1934 г
+                            Столица Чечни.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1994-2000</div>
+                        <h3>Восстановление</h3>
+                        <p>ВосстановлениеПосле двух войн город был полностью восстановлен. Современная архитектура и
+                            инфраструктура
+                            Республики Узбекистан.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3>Zamonaviy megapolis</h3>
+                        <p>Грозный стал одним из самых современных городов Кавказа. Центр туризма и бизнеса.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section id="culture" class="culture">
+            <div class="section-header">
+                <h2 class="section-title">Культура и традиции</h2>
+                <p class="section-subtitle">Богатое наследие чеченского народа</p>
+            </div>
+
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <img src="https://images.unsplash.com/photo-1514222134-b57cbb8ce073?w=600" alt="Cuisine">
+                    <div class="culture-overlay">
+                        <div class="culture-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Национальная кухня</h3>
+                        <p>Галнаш, жижиг-галнаш, чепалгаш, жижиг-галнаш и другие национальные блюда. Гостеприимство и
+                            столовое число.</p>
+                    </div>
+                </div>
+
+                <div class="culture-card">
+                    <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?w=600" alt="Dance">
+                    <div class="culture-overlay">
+                        <div class="culture-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Национальный танец</h3>
+                        <p>Лезгинка - один из самых острых и быстрых танцевальных видов Кавказа. Танцы мужчин и женщин
+                            гармония.</p>
+                    </div>
+                </div>
+
+                <div class="culture-card">
+                    <img src="https://images.unsplash.com/photo-1544211958-e35577125f6b?w=600" alt="Crafts">
+                    <div class="culture-overlay">
+                        <div class="culture-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Ремесленничество</h3>
+                        <p>Традиционное ковроткачество, оружейное дело, ювелирное дело и резьба по дереву.</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="landmark-card">
-                <div class="landmark-image"
-                    style="background-image: url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=600')">
-                    <div class="landmark-overlay"></div>
+        <!-- Economy Section -->
+        <section id="economy" class="economy">
+            <div class="section-header">
+                <h2 class="section-title">Экономика</h2>
+                <p class="section-subtitle">Экономические показатели города</p>
+            </div>
+
+            <div class="economy-grid">
+                <div class="economy-card">
+                    <div class="economy-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Нефтяная промышленность</h3>
+                    <div class="economy-value">15%</div>
+                    <p>15% российской добычи нефти приходится на Чечню.</p>
                 </div>
-                <div class="landmark-content">
-                    <span class="landmark-tag">Культура</span>
-                    <h3>Национальный музей</h3>
-                    <p>Крупнейший музей, отражающий богатую историю и культуру Чечни. От древних пленников
-                        до современного искусства.</p>
-                    <div class="landmark-meta">
-                        <span class="meta-item"><i class="fas fa-map-marker-alt"></i>проспект Ленина</span>
-                        <span class="meta-item"><i class="fas fa-ticket-alt"></i> 200₽</span>
+
+                <div class="economy-card">
+                    <div class="economy-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Строительство</h3>
+                    <div class="economy-value">25%</div>
+                    <p>Фотография ежегодного роста</p>
+                </div>
+
+                <div class="economy-card">
+                    <div class="economy-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Туризм</h3>
+                    <div class="economy-value">1M+</div>
+                    <p>Количество туристов в год</p>
+                </div>
+
+                <div class="economy-card">
+                    <div class="economy-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3>Торговля</h3>
+                    <div class="economy-value">200+</div>
+                    <p>Крупные торговые центры</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transport Section -->
+        <section id="transport" class="transport">
+            <div class="section-header">
+                <h2 class="section-title">Транспорт</h2>
+                <p class="section-subtitle">Городская транспортная инфраструктура</p>
+            </div>
+
+            <div class="transport-container">
+                <div class="transport-tabs">
+                    <button class="tab-btn active" onclick="openTab(event, 'airport')">Аэропорт</button>
+                    <button class="tab-btn" onclick="openTab(event, 'railway')">Железная дорога</button>
+                    <button class="tab-btn" onclick="openTab(event, 'bus')">автобус</button>
+                    <button class="tab-btn" onclick="openTab(event, 'taxi')">такси </button>
+                </div>
+
+                <div id="airport" class="tab-content active">
+                    <h3><i class="fas fa-plane" style="color: var(--accent); margin-right: 10px;"></i>Аэропорт Грозный
+                    </h3>
+                    <ul class="transport-list">
+                        <li><i class="fas fa-check-circle"></i> Международные рейсы: Москва, Стамбул, Дубай, Мекка</li>
+                        <li><i class="fas fa-check-circle"></i> Код аэропорта: GRV (URMG)</li>
+                        <li><i class="fas fa-check-circle"></i> До центра города: 10 км (20 минут)</li>
+                        <li><i class="fas fa-check-circle"></i> Услуги: аренда VIP-зала, багажа, автомобиля</li>
+                    </ul>
+                </div>
+
+                <div id="railway" class="tab-content">
+                    <h3><i class="fas fa-train" style="color: var(--accent); margin-right: 10px;"></i>Железнодорожный
+                        вокзал
+                    </h3>
+                    <ul class="transport-list">
+                        <li><i class="fas fa-check-circle"></i>Направления: Москва, Волгоград, Астрахань</li>
+                        <li><i class="fas fa-check-circle"></i>Скоростные поезда «Стриж» и «Ласточка»</li>
+                        <li><i class="fas fa-check-circle"></i>Адрес вокзала: проспект Кадырова, 1</li>
+                        <li><i class="fas fa-check-circle"></i>Электичка: пригородное сообщение</li>
+                    </ul>
+                </div>
+
+                <div id="bus" class="tab-content">
+                    <h3><i class="fas fa-bus" style="color: var(--accent); margin-right: 10px;"></i>Автобус и троллебус
+                    </h3>
+                    <ul class="transport-list">
+                        <li><i class="fas fa-check-circle"></i>Маршруты автобусов и троллейбусов 50+</li>
+                        <li><i class="fas fa-check-circle"></i>Цена: от 30 руб</li>
+                        <li><i class="fas fa-check-circle"></i>Рабочее время: 06:00 - 23:00</li>
+                        <li><i class="fas fa-check-circle"></i>Оплата: наличными или транспортной картой</li>
+                    </ul>
+                </div>
+
+                <div id="taxi" class="tab-content">
+                    <h3><i class="fas fa-taxi" style="color: var(--accent); margin-right: 10px;"></i>Услуги такси</h3>
+                    <ul class="transport-list">
+                        <li><i class="fas fa-check-circle"></i> Yandex Go, Citymobil, Maxim</li>
+                        <li><i class="fas fa-check-circle"></i>Средняя цена: 150-300 руб</li>
+                        <li><i class="fas fa-check-circle"></i>До аэропорта: 500-700 руб</li>
+                        <li><i class="fas fa-check-circle"></i>24/7 обслуживание</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <div class="weather-container">
+                <div class="weather-main">
+                    <div class="weather-icon-main">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="weather-temp">+12°C</div>
+                    <div class="weather-desc">Солнечный воздух</div>
+                </div>
+                <div class="weather-details">
+                    <div class="weather-item">
+                        <i class="fas fa-tint"></i>
+                        <span>Влажность</span>
+                        <strong>65%</strong>
+                    </div>
+                    <div class="weather-item">
+                        <i class="fas fa-wind"></i>
+                        <span>Ветер</span>
+                        <strong>3 m/s</strong>
+                    </div>
+                    <div class="weather-item">
+                        <i class="fas fa-eye"></i>
+                        <span>Вид</span>
+                        <strong>10 km</strong>
+                    </div>
+                    <div class="weather-item">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                        <span>Давление</span>
+                        <strong>762 mm</strong>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="landmark-card">
-                <div class="landmark-image"
-                    style="background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600')">
-                    <div class="landmark-overlay"></div>
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="section-header">
+                <h2 class="section-title">Фотогалерея</h2>
+                <p class="section-subtitle">Красивые моменты города</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400" alt="Grozny 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
-                <div class="landmark-content">
-                    <span class="landmark-tag">Исторический памятник</span>
-                    <h3>Аргунские ворота</h3>
-                    <p>Символические ворота города, образец традиционной чеченской архитектуры. Вечер красивый
-                        имеет освещение.</p>
-                    <div class="landmark-meta">
-                        <span class="meta-item"><i class="fas fa-map-marker-alt"></i>Центр города</span>
-                        <span class="meta-item"><i class="fas fa-camera"></i> бесплатно</span>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400" alt="Grozny 2">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=400" alt="Grozny 3">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400" alt="Grozny 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400" alt="Grozny 5">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=400" alt="Grozny 6">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="landmark-card">
-                <div class="landmark-image"
-                    style="background-image: url('https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=600')">
-                    <div class="landmark-overlay"></div>
-                </div>
-                <div class="landmark-content">
-                    <span class="landmark-tag">Природа</span>
-                    <h3>Пляж Сунья</h3>
-                    <p>Зона отдыха, пешеходные дорожки и парки вдоль реки. Любимый отдых местных жителей
-                        место получения.</p>
-                    <div class="landmark-meta">
-                        <span class="meta-item"><i class="fas fa-map-marker-alt"></i>Река Сунья</span>
-                        <span class="meta-item"><i class="fas fa-walking"></i>5 км</span>
+        <!-- News Section -->
+        <section id="news" class="news">
+            <div class="section-header">
+                <h2 class="section-title">Последние новости</h2>
+                <p class="section-subtitle">Новости о жизни города</p>
+            </div>
+
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400')">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">20 Mart 2024</div>
+                        <h3>Новые здания Грозного города</h3>
+                        <p>В бизнес-центре города начато строительство еще двух высотных зданий.</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="landmark-card">
-                <div class="landmark-image"
-                    style="background-image: url('https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=600')">
-                    <div class="landmark-overlay"></div>
-                </div>
-                <div class="landmark-content">
-                    <span class="landmark-tag">искусство</span>
-                    <h3>Национальный театр</h3>
-                    <p>Чеченский национальный театр - сцена драмы и музыкальных спектаклей. Традиционный танец и музыка
-                        демонстрации.</p>
-                    <div class="landmark-meta">
-                        <span class="meta-item"><i class="fas fa-map-marker-alt"></i>Театральная площадь</span>
-                        <span class="meta-item"><i class="fas fa-theater-masks"></i> 800 Сиденье</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- History Timeline -->
-    <section id="history" class="history">
-        <div class="section-header">
-            <h2 class="section-title">История города</h2>
-            <p class="section-subtitle">Важнейшие этапы развития Грозного</p>
-        </div>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-year">1818</div>
-                    <h3>Основание</h3>
-                    <p>По приказу генерала Ермолова он был основан как крепость Сунья. Во время Кавказских войн
-                        важная военная крепость.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-year">1870</div>
-                    <h3>Железная дорога и нефть</h3>
-                    <p>Строительство железной дороги Ростов - Баку способствовало быстрому развитию города. Нефть
-                        начало промышленности.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-year">1917</div>
-                    <h3>Советский период</h3>
-                    <p>Грозный стал центром нефтяной промышленности. Город был расширен и модернизирован. В 1934 г
-                        Столица Чечни.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-year">1994-2000</div>
-                    <h3>Восстановление</h3>
-                    <p>ВосстановлениеПосле двух войн город был полностью восстановлен. Современная архитектура и инфраструктура
-                        Республики Узбекистан.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-year">2024</div>
-                    <h3>Zamonaviy megapolis</h3>
-                    <p>Грозный стал одним из самых современных городов Кавказа. Центр туризма и бизнеса.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Culture Section -->
-    <section id="culture" class="culture">
-        <div class="section-header">
-            <h2 class="section-title">Культура и традиции</h2>
-            <p class="section-subtitle">Богатое наследие чеченского народа</p>
-        </div>
-
-        <div class="culture-grid">
-            <div class="culture-card">
-                <img src="https://images.unsplash.com/photo-1514222134-b57cbb8ce073?w=600" alt="Cuisine">
-                <div class="culture-overlay">
-                    <div class="culture-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <h3>Национальная кухня</h3>
-                    <p>Галнаш, жижиг-галнаш, чепалгаш, жижиг-галнаш и другие национальные блюда. Гостеприимство и
-                        столовое число.</p>
-                </div>
-            </div>
-
-            <div class="culture-card">
-                <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?w=600" alt="Dance">
-                <div class="culture-overlay">
-                    <div class="culture-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h3>Национальный танец</h3>
-                    <p>Лезгинка - один из самых острых и быстрых танцевальных видов Кавказа. Танцы мужчин и женщин
-                        гармония.</p>
-                </div>
-            </div>
-
-            <div class="culture-card">
-                <img src="https://images.unsplash.com/photo-1544211958-e35577125f6b?w=600" alt="Crafts">
-                <div class="culture-overlay">
-                    <div class="culture-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3>Ремесленничество</h3>
-                    <p>Традиционное ковроткачество, оружейное дело, ювелирное дело и резьба по дереву.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Economy Section -->
-    <section id="economy" class="economy">
-        <div class="section-header">
-            <h2 class="section-title">Экономика</h2>
-            <p class="section-subtitle">Экономические показатели города</p>
-        </div>
-
-        <div class="economy-grid">
-            <div class="economy-card">
-                <div class="economy-icon">
-                    <i class="fas fa-oil-can"></i>
-                </div>
-                <h3>Нефтяная промышленность</h3>
-                <div class="economy-value">15%</div>
-                <p>15% российской добычи нефти приходится на Чечню.</p>
-            </div>
-
-            <div class="economy-card">
-                <div class="economy-icon">
-                    <i class="fas fa-building"></i>
-                </div>
-                <h3>Строительство</h3>
-                <div class="economy-value">25%</div>
-                <p>Фотография ежегодного роста</p>
-            </div>
-
-            <div class="economy-card">
-                <div class="economy-icon">
-                    <i class="fas fa-plane"></i>
-                </div>
-                <h3>Туризм</h3>
-                <div class="economy-value">1M+</div>
-                <p>Количество туристов в год</p>
-            </div>
-
-            <div class="economy-card">
-                <div class="economy-icon">
-                    <i class="fas fa-shopping-bag"></i>
-                </div>
-                <h3>Торговля</h3>
-                <div class="economy-value">200+</div>
-                <p>Крупные торговые центры</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Transport Section -->
-    <section id="transport" class="transport">
-        <div class="section-header">
-            <h2 class="section-title">Транспорт</h2>
-            <p class="section-subtitle">Городская транспортная инфраструктура</p>
-        </div>
-
-        <div class="transport-container">
-            <div class="transport-tabs">
-                <button class="tab-btn active" onclick="openTab(event, 'airport')">Аэропорт</button>
-                <button class="tab-btn" onclick="openTab(event, 'railway')">Железная дорога</button>
-                <button class="tab-btn" onclick="openTab(event, 'bus')">автобус</button>
-                <button class="tab-btn" onclick="openTab(event, 'taxi')">такси </button>
-            </div>
-
-            <div id="airport" class="tab-content active">
-                <h3><i class="fas fa-plane" style="color: var(--accent); margin-right: 10px;"></i>Аэропорт Грозный</h3>
-                <ul class="transport-list">
-                    <li><i class="fas fa-check-circle"></i> Международные рейсы: Москва, Стамбул, Дубай, Мекка</li>
-                    <li><i class="fas fa-check-circle"></i> Код аэропорта: GRV (URMG)</li>
-                    <li><i class="fas fa-check-circle"></i> До центра города: 10 км (20 минут)</li>
-                    <li><i class="fas fa-check-circle"></i> Услуги: аренда VIP-зала, багажа, автомобиля</li>
-                </ul>
-            </div>
-
-            <div id="railway" class="tab-content">
-                <h3><i class="fas fa-train" style="color: var(--accent); margin-right: 10px;"></i>Железнодорожный вокзал
-                </h3>
-                <ul class="transport-list">
-                    <li><i class="fas fa-check-circle"></i>Направления: Москва, Волгоград, Астрахань</li>
-                    <li><i class="fas fa-check-circle"></i>Скоростные поезда «Стриж» и «Ласточка»</li>
-                    <li><i class="fas fa-check-circle"></i>Адрес вокзала: проспект Кадырова, 1</li>
-                    <li><i class="fas fa-check-circle"></i>Электичка: пригородное сообщение</li>
-                </ul>
-            </div>
-
-            <div id="bus" class="tab-content">
-                <h3><i class="fas fa-bus" style="color: var(--accent); margin-right: 10px;"></i>Автобус и троллебус</h3>
-                <ul class="transport-list">
-                    <li><i class="fas fa-check-circle"></i>Маршруты автобусов и троллейбусов 50+</li>
-                    <li><i class="fas fa-check-circle"></i>Цена: от 30 руб</li>
-                    <li><i class="fas fa-check-circle"></i>Рабочее время: 06:00 - 23:00</li>
-                    <li><i class="fas fa-check-circle"></i>Оплата: наличными или транспортной картой</li>
-                </ul>
-            </div>
-
-            <div id="taxi" class="tab-content">
-                <h3><i class="fas fa-taxi" style="color: var(--accent); margin-right: 10px;"></i>Услуги такси</h3>
-                <ul class="transport-list">
-                    <li><i class="fas fa-check-circle"></i> Yandex Go, Citymobil, Maxim</li>
-                    <li><i class="fas fa-check-circle"></i>Средняя цена: 150-300 руб</li>
-                    <li><i class="fas fa-check-circle"></i>До аэропорта: 500-700 руб</li>
-                    <li><i class="fas fa-check-circle"></i>24/7 обслуживание</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Weather Section -->
-    <section class="weather">
-        <div class="weather-container">
-            <div class="weather-main">
-                <div class="weather-icon-main">
-                    <i class="fas fa-sun"></i>
-                </div>
-                <div class="weather-temp">+12°C</div>
-                <div class="weather-desc">Солнечный воздух</div>
-            </div>
-            <div class="weather-details">
-                <div class="weather-item">
-                    <i class="fas fa-tint"></i>
-                    <span>Влажность</span>
-                    <strong>65%</strong>
-                </div>
-                <div class="weather-item">
-                    <i class="fas fa-wind"></i>
-                    <span>Ветер</span>
-                    <strong>3 m/s</strong>
-                </div>
-                <div class="weather-item">
-                    <i class="fas fa-eye"></i>
-                    <span>Вид</span>
-                    <strong>10 km</strong>
-                </div>
-                <div class="weather-item">
-                    <i class="fas fa-compress-arrows-alt"></i>
-                    <span>Давление</span>
-                    <strong>762 mm</strong>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="section-header">
-            <h2 class="section-title">Фотогалерея</h2>
-            <p class="section-subtitle">Красивые моменты города</p>
-        </div>
-
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400" alt="Grozny 1">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400" alt="Grozny 2">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=400" alt="Grozny 3">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400" alt="Grozny 4">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400" alt="Grozny 5">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=400" alt="Grozny 6">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- News Section -->
-    <section id="news" class="news">
-        <div class="section-header">
-            <h2 class="section-title">Последние новости</h2>
-            <p class="section-subtitle">Новости о жизни города</p>
-        </div>
-
-        <div class="news-grid">
-            <div class="news-card">
-                <div class="news-image"
-                    style="background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400')">
-                </div>
-                <div class="news-content">
-                    <div class="news-date">20 Mart 2024</div>
-                    <h3>Новые здания Грозного города</h3>
-                    <p>В бизнес-центре города начато строительство еще двух высотных зданий.</p>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <div class="new
+                <div class="news-card">
+                    <div class="new
                 s-image"
-                    style="background-image: url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=400')">
+                        style="background-image: url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=400')">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">15 Mart 2024</div>
+                        <h3>Подготовка к национальному празднику</h3>
+                        <p>В связи с праздником Навруз в городе проводится большая подготовительная работа.</p>
+                    </div>
                 </div>
-                <div class="news-content">
-                    <div class="news-date">15 Mart 2024</div>
-                    <h3>Подготовка к национальному празднику</h3>
-                    <p>В связи с праздником Навруз в городе проводится большая подготовительная работа.</p>
+
+                <div class="news-card">
+                    <div class="news-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400')">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">10 Mart 2024</div>
+                        <h3>Показатели туризма возросли</h3>
+                        <p>В первом квартале 2024 года город принял более 300 000 туристов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2 class="section-title">Свяжитесь с нами »</h2>
+                <p class="section-subtitle">У вас есть вопросы? Отправить сообщение</p>
+            </div>
+
+            <div class="contact-container">
+                <form onsubmit="event.preventDefault(); alert('Сообщение отправлено!');">
+                    <div class="form-group">
+                        <label>Ваше имя</label>
+                        <input type="text" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Электронная почта</label>
+                        <input type="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Сообщение</label>
+                        <textarea rows="5" placeholder="Введите сообщение..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🏛️ Грозный</h3>
+                    <p>Столица Чечни - это сочетание истории, культуры и современности. Полная информация о городе
+                        информация ».</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#about">О городе</a></li>
+                        <li><a href="#landmarks">места</a></li>
+                        <li><a href="#history">История</a></li>
+                        <li><a href="#culture">Культура</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>услуги</h4>
+                    <ul>
+                        <li><a href="#">гостиницы</a></li>
+                        <li><a href="#">рестораны</a></li>
+                        <li><a href="#">Транспорт</a></li>
+                        <li><a href="#">Экскурсии</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>связь</h4>
+                    <ul>
+                        <li><a href="#">+7 (8712) 22-33-44</a></li>
+                        <li><a href="#">info@grozny.ru</a></li>
+                        <li><a href="#">проспект Кадырова, 1</a></li>
+                        <li><a href="#">364000, Чечня</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="news-card">
-                <div class="news-image"
-                    style="background-image: url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400')">
-                </div>
-                <div class="news-content">
-                    <div class="news-date">10 Mart 2024</div>
-                    <h3>Показатели туризма возросли</h3>
-                    <p>В первом квартале 2024 года город принял более 300 000 туристов.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="section-header">
-            <h2 class="section-title">Свяжитесь с нами »</h2>
-            <p class="section-subtitle">У вас есть вопросы? Отправить сообщение</p>
-        </div>
-
-        <div class="contact-container">
-            <form onsubmit="event.preventDefault(); alert('Сообщение отправлено!');">
-                <div class="form-group">
-                    <label>Ваше имя</label>
-                    <input type="text" placeholder="Введите ваше имя" required>
-                </div>
-                <div class="form-group">
-                    <label>Электронная почта</label>
-                    <input type="email" placeholder="email@example.com" required>
-                </div>
-                <div class="form-group">
-                    <label>Сообщение</label>
-                    <textarea rows="5" placeholder="Введите сообщение..." required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">отправить</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>🏛️ Грозный</h3>
-                <p>Столица Чечни - это сочетание истории, культуры и современности. Полная информация о городе
-                    информация ».</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Grozny City Guide. Все права защищены.</p>
+                <div class="creator">
+                    <h3>programmer: <span>Mahmud.</span> Эта страница подготовлена для рекламы.</h3>
+                    <a href="https://instagram.com/mahmudcoder" class="fa fa-instagram"></a>
+                    <a href="https://youtube.com/@mahmudcoder" class="fa fa-youtube"></a>
+                    <a href="https://github.com/mahmudcoder777-web" class="fa fa-github"></a>
+                    <a href="https://t.me/mahmudcoder" class="fa fa-telegram"></a>
                 </div>
             </div>
-
-            <div class="footer-section">
-                <h4>Быстрые ссылки</h4>
-                <ul>
-                    <li><a href="#about">О городе</a></li>
-                    <li><a href="#landmarks">места</a></li>
-                    <li><a href="#history">История</a></li>
-                    <li><a href="#culture">Культура</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>услуги</h4>
-                <ul>
-                    <li><a href="#">гостиницы</a></li>
-                    <li><a href="#">рестораны</a></li>
-                    <li><a href="#">Транспорт</a></li>
-                    <li><a href="#">Экскурсии</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>связь</h4>
-                <ul>
-                    <li><a href="#">+7 (8712) 22-33-44</a></li>
-                    <li><a href="#">info@grozny.ru</a></li>
-                    <li><a href="#">проспект Кадырова, 1</a></li>
-                    <li><a href="#">364000, Чечня</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 Grozny City Guide. Все права защищены.</p>
-            <div class="creator">
-                <h3>programmer: <span>Mahmud.</span> Эта страница подготовлена для рекламы.</h3>
-                <a href="https://instagram.com/mahmudcoder" class="fa fa-instagram"></a>
-                <a href="https://youtube.com/@mahmudcoder" class="fa fa-youtube"></a>
-                <a href="https://github.com/mahmudcoder777-web" class="fa fa-github"></a>
-                <a href="https://t.me/mahmudcoder" class="fa fa-telegram"></a>
-            </div>
-        </div>
-    </footer>
-     <script src="js/app.js"></script>
+        </footer>
+    </div>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
