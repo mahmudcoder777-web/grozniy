@@ -26,9 +26,6 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
-.container{
-    border: 2px solid red;
-}
 /* ===== NAVBAR ===== */
 .navbar {
     position: fixed;
@@ -99,6 +96,8 @@ body {
 }
 
 .menu-btn {
+    position: absolute;
+    right: 30px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -1144,7 +1143,7 @@ footer {
 
 @media (max-width: 600px) {
     .navbar{
-        width: 99.5%;
+        width: 100%;
     }   
     .hero-stats {
         flex-direction: column;
@@ -1170,5 +1169,10 @@ footer {
 
     .tab-content {
         padding: 1.5rem;
+    }
+}
+@media (max-width: 400px){
+    .navbar{
+        max-width: 72%;
     }
 }
