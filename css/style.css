@@ -26,11 +26,13 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
+
 /* ===== NAVBAR ===== */
 .navbar {
     position: fixed;
     top: 0;
-    width: 99.5%;
+    left: 0;
+    right: 0;
     height: 80px;
     background: rgba(15, 15, 30, 0.95);
     backdrop-filter: blur(20px);
@@ -96,8 +98,6 @@ body {
 }
 
 .menu-btn {
-    position: absolute;
-    right: 30px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -1090,9 +1090,6 @@ footer {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 968px) {
-    .navbar{
-        max-width: 100%;
-    }
     .nav-menu {
         display: none;
     }
@@ -1142,9 +1139,12 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .navbar{
-        width: 100%;
-    }   
+
+    .section-header{
+        .section-title{
+            font-size: 30px;
+        }
+    }
     .hero-stats {
         flex-direction: column;
         gap: 2rem;
@@ -1169,10 +1169,5 @@ footer {
 
     .tab-content {
         padding: 1.5rem;
-    }
-}
-@media (max-width: 400px){
-    .navbar{
-        max-width: 72%;
     }
 }

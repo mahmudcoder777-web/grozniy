@@ -14,40 +14,41 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <a href="#" class="nav-logo">🏛️ Грозный</a>
 
-        <ul class="nav-menu">
-            <li><a href="#about">Город</a></li>
-            <li><a href="#landmarks">Места</a></li>
-            <li><a href="#history">История</a></li>
-            <li><a href="#culture">Культура</a></li>
-            <li><a href="#economy">Экономика</a></li>
-            <li><a href="#gallery">Галерея</a></li>
-            <li><a href="#contact">Связь</a></li>
-        </ul>
+        <!-- Navbar -->
+        <nav class="navbar" id="navbar">
+            <a href="#" class="nav-logo">🏛️ Грозный</a>
 
-        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </nav>
+            <ul class="nav-menu">
+                <li><a href="#about">Город</a></li>
+                <li><a href="#landmarks">Места</a></li>
+                <li><a href="#history">История</a></li>
+                <li><a href="#culture">Культура</a></li>
+                <li><a href="#economy">Экономика</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Связь</a></li>
+            </ul>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-nav" id="mobileNav">
-        <a href="#about" onclick="closeMenu()">О городе</a>
-        <a href="#landmarks" onclick="closeMenu()">Достопримечательности</a>
-        <a href="#history" onclick="closeMenu()">История</a>
-        <a href="#culture" onclick="closeMenu()">Madaniyat</a>
-        <a href="#economy" onclick="closeMenu()">Экономика</a>
-        <a href="#transport" onclick="closeMenu()">Транспорт</a>
-        <a href="#gallery" onclick="closeMenu()">Галерея</a>
-        <a href="#news" onclick="closeMenu()">Новости</a>
-        <a href="#contact" onclick="closeMenu()">Cвязь</a>
-    </div>
-    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+            <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#about" onclick="closeMenu()">О городе</a>
+            <a href="#landmarks" onclick="closeMenu()">Достопримечательности</a>
+            <a href="#history" onclick="closeMenu()">История</a>
+            <a href="#culture" onclick="closeMenu()">Madaniyat</a>
+            <a href="#economy" onclick="closeMenu()">Экономика</a>
+            <a href="#transport" onclick="closeMenu()">Транспорт</a>
+            <a href="#gallery" onclick="closeMenu()">Галерея</a>
+            <a href="#news" onclick="closeMenu()">Новости</a>
+            <a href="#contact" onclick="closeMenu()">Cвязь</a>
+        </div>
+        <div class="overlay" id="overlay" onclick="closeMenu()"></div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -144,7 +145,7 @@
         </div>
     </section>
 
-    <!-- Landmarks Section -->
+    <!-- Landmarks Section hatolik bor -->
     <section id="landmarks" class="landmarks">
         <div class="section-header">
             <h2 class="section-title">Достопримечательности</h2>
@@ -245,8 +246,7 @@
                 <div class="landmark-content">
                     <span class="landmark-tag">искусство</span>
                     <h3>Национальный театр</h3>
-                    <p>Чеченский национальный театр - сцена драмы и музыкальных спектаклей. Традиционный танец и
-                        музыка
+                    <p>Чеченский национальный театр - сцена драмы и музыкальных спектаклей. Традиционный танец и музыка
                         демонстрации.</p>
                     <div class="landmark-meta">
                         <span class="meta-item"><i class="fas fa-map-marker-alt"></i>Театральная площадь</span>
@@ -299,8 +299,7 @@
                 <div class="timeline-content">
                     <div class="timeline-year">1994-2000</div>
                     <h3>Восстановление</h3>
-                    <p>ВосстановлениеПосле двух войн город был полностью восстановлен. Современная архитектура и
-                        инфраструктура
+                    <p>ВосстановлениеПосле двух войн город был полностью восстановлен. Современная архитектура и инфраструктура
                         Республики Узбекистан.</p>
                 </div>
                 <div class="timeline-dot"></div>
@@ -424,8 +423,7 @@
             </div>
 
             <div id="airport" class="tab-content active">
-                <h3><i class="fas fa-plane" style="color: var(--accent); margin-right: 10px;"></i>Аэропорт Грозный
-                </h3>
+                <h3><i class="fas fa-plane" style="color: var(--accent); margin-right: 10px;"></i>Аэропорт Грозный</h3>
                 <ul class="transport-list">
                     <li><i class="fas fa-check-circle"></i> Международные рейсы: Москва, Стамбул, Дубай, Мекка</li>
                     <li><i class="fas fa-check-circle"></i> Код аэропорта: GRV (URMG)</li>
@@ -435,8 +433,7 @@
             </div>
 
             <div id="railway" class="tab-content">
-                <h3><i class="fas fa-train" style="color: var(--accent); margin-right: 10px;"></i>Железнодорожный
-                    вокзал
+                <h3><i class="fas fa-train" style="color: var(--accent); margin-right: 10px;"></i>Железнодорожный вокзал
                 </h3>
                 <ul class="transport-list">
                     <li><i class="fas fa-check-circle"></i>Направления: Москва, Волгоград, Астрахань</li>
@@ -447,8 +444,7 @@
             </div>
 
             <div id="bus" class="tab-content">
-                <h3><i class="fas fa-bus" style="color: var(--accent); margin-right: 10px;"></i>Автобус и троллебус
-                </h3>
+                <h3><i class="fas fa-bus" style="color: var(--accent); margin-right: 10px;"></i>Автобус и троллебус</h3>
                 <ul class="transport-list">
                     <li><i class="fas fa-check-circle"></i>Маршруты автобусов и троллейбусов 50+</li>
                     <li><i class="fas fa-check-circle"></i>Цена: от 30 руб</li>
@@ -679,8 +675,7 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/app.js"></script>
+     <script src="js/app.js"></script>
 </body>
 
 </html>
